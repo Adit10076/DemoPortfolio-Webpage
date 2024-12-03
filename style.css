@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    width: 1200px;
+}
+.nav-bar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: -10px;
+    width: 7vw;
+}
+.name{
+    margin-left: -1.2rem;
+    display: inline;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+.nav-items{
+    display: inline-flex;
+    gap:2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bolder;
+}
+.nav-items:hover{
+    cursor: pointer;
+}
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+    align-content: center;
+}
+.content-subheading{
+    font-size: 30px;
+}
+.role{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+.faded-text{
+    position: absolute;
+    user-select: none;
+    font-size: 7em;
+    color:rgb(231,231,231);
+    left:5%;
+    font-weight: bold;
+    align-self: flex-end;
+    bottom:0;
+}
+.content-left{
+    justify-self: center;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:2rem;
+}
+.content-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+
+}
+.hire-me-btn{
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 50, 75);
+}
+a{
+    text-decoration: none;
+}
+.hire-me-btn:hover{
+    cursor: pointer;
+}
+.content-right{
+    display: flex;
+    flex-direction: row;
+    z-index:-1;
+    position: relative;
+}
+.user-img{
+    padding:2rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: ScaleImg 5s ease-in infinite alternate;
+}
+@keyframes ScaleImg {
+    from{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+    to{
+        filter:grayscale(0);
+        transform: scale(0.9);
+    }
+}
+ .icon-dots{
+    position: absolute;
+    z-index:1;
+    right:0;
+    align-self: flex-end;
+}
+.icon-circles{
+    position: absolute;
+    z-index: 1;
+    left:0;
+    align-self: flex-end;
+} 
+.icon-plus{
+    position:absolute;
+    z-index: 1;
+    margin-left: 16rem;
+}
+.icon-cubes{
+    position:absolute;
+    z-index: 1;
+    right:0;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(228, 225, 225, 0.897);
+}
+.project-heading{
+    padding: 3rem;
+    align-self: center;
+    font-size: 58px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.img1,.img2,.img3,.img4{
+    height: 55vh;
+    width: 45vw;
+}
+.project1,.project2,.project3,.project4{
+    display: flex;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    box-shadow:rgba(0, 0, 0, 0.65) 11px -14px 14px 0px;
+    
+
+}
+.project1:hover{
+    transform: scale(1.1);
+    #ani1{
+        height: 55vh;
+        width: 0px;
+        background-color: #343d68;
+        animation: slide 3s ease-in 1;
+        position: absolute;
+        z-index:1;
+    }
+}
+.project2:hover{
+    transform: scale(1.1);
+    #ani2{
+        height: 55vh;
+        width: 0px;
+        background-color: #343d68;
+        animation: slide 3s ease-in 1;
+        position: absolute;
+        z-index:1;
+    }
+}
+.project3:hover{
+    transform: scale(1.1);
+    #ani3{
+        height: 55vh;
+        width: 0px;
+        background-color: #343d68;
+        animation: slide 3s ease-in 1;
+        position: absolute;
+        z-index:1;
+    }
+}
+.project4:hover{
+    transform: scale(1.1);
+    #ani4{
+        height: 55vh;
+        width: 0px;
+        background-color: #343d68;
+        animation: slide 3s ease-in 1;
+        position: absolute;
+        z-index:1;
+    }
+}
+@keyframes slide {
+    from{
+        width: 0px;
+        background-color:rgba(113, 106, 220, 0.5);
+        
+        
+    }
+    to{
+        width: 45vw;
+        background-color:rgba(113, 106, 220, 0.5);
+        
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img src="./images/userAsset/NavLogo.jpg" class="logo">
+                    <div class="name">Ohn Doe</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#" style="color: black;">Projects</a></div>
+                    <div><a href="#" style="color: black;">Skills</a></div>
+                    <div><a href="#" style="color: black;">Contact Me</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="faded-text">John Doe</div>
+            <div class="content-left">
+                <div class="content-heading">
+                    <h3>Hi! John Doe</h3>
+                </div>
+                <div class="content-subheading">
+                    I am a <span class="role"></span>
+                </div>
+                <div class="content-description">
+                    I am a software developer.Here is my portfolio website.
+                    <br>
+                    Here you'll learn about my journey as a software developer.
+                </div>
+                <div class="hire-me-btn">
+                    <a href="#" style="color:white">Hire Me</a>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="icon-dots">
+                    <img src="./images/userAsset/dots.png">
+                </div>
+                <div class="icon-cubes">
+                    <img src ="images/userAsset/cube.png">
+                </div>
+                <div class="icon-circles">
+                    <img src="./images/userAsset/circle.png">
+                </div>
+                <div class="icon-zigzag">
+                    <img src="./images/userAsset/zigzags.png">
+                </div>
+                <div class="user-img">
+                    <img src="./images/userAsset/UserImage.png">
+                </div>
+                <div class="icon-plus">
+                    <img src="./images/userAsset/plus.png">
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="project-heading">
+                Projects
+            </div>
+            <div class="project1">
+                <div id="ani1"></div>
+                <img src="./images/projects/Project1.png" class="img1">
+            </div>
+            <div class="project2"> 
+                <div id="ani2"></div>
+                <img src="./images/projects/Project2.png" class="img2">
+            </div>
+            <div class="project3">
+                <div id="ani3"></div>
+                <img src="./images/projects/Project3.png" class="img3">
+            </div>
+            <div class="project4">
+                <div id="ani4"></div>
+                <img src="./images/projects/Project4.png" class="img4">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Full Stack Developer",
+            "Web Developer",
+            "UI-UX Designer",
+            "Backend Developer",
+            "Coder",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
+</body>
+</html>
